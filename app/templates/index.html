@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+{% block title %}{{SNAME}}{% endblock %}
+{% block content %}
+{% if SNAME %}
+
+	<div id = "stats" class ="container">
+		<h1>{{SNAME}}</h1>
+		<p id ="Tier">Tier: {{TIER}}</p>
+		<p id = "Division">Division : {{DIVISION}}</p>
+		<p id = "Division Name">Division Name: {{DIVISIONN}}</p>
+		<p id = "Ranked Wins">Ranked Wins: {{RWINS}}</p>
+		<p id = "Ranked Losses">Ranked Losses: {{RLOSS}}</p>
+	</div>
+{% endif %}
+{% endblock %}
